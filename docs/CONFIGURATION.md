@@ -109,7 +109,7 @@ Logs are written to `~/.config/opencode/antigravity-logs/` (or `log_dir` if set)
 
 ## Recommended Configs
 
-Copy-paste ready configs with all recommended settings enabled.
+Copy-paste ready configs with recommended settings pre-applied.
 
 ### 1 Account
 

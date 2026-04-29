@@ -26,7 +26,7 @@ chmod +x setup-pi-runner.sh
 ./setup-pi-runner.sh
 ```
 
-Follow the prompts to enter your Repo URL and Token.
+Follow the prompts to enter your repository URL and token.
 
 ## Step 3: Authenticate Tools
 To enable `gh copilot` and other AI tools, run the auth helper:

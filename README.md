@@ -7,6 +7,8 @@
 [![X (Twitter)](https://img.shields.io/badge/X-@dopesalmon-000000?style=flat&logo=x)](https://x.com/dopesalmon)
 
 <!-- GitAds-Verify: 6JSM9P7D6CZT8NYL51MLAPHY2Q16XMHE -->
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=noefabris/opencode-antigravity-auth@github)](https://gitads.dev/v1/ad-track?source=noefabris/opencode-antigravity-auth@github)
 
 Enable Opencode to authenticate against **Antigravity** (Google's IDE) via OAuth so you can use Antigravity rate limits and access models like `gemini-3.1-pro` and `claude-opus-4-6-thinking` with your Google credentials.
 

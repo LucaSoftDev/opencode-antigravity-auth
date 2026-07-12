@@ -1,4 +1,5 @@
 import { exec } from "node:child_process";
+import { readFileSync } from "node:fs";
 import { tool } from "@opencode-ai/plugin";
 import {
   ANTIGRAVITY_DEFAULT_PROJECT_ID,
@@ -206,7 +207,6 @@ function clearWarmupAttempt(sessionId: string): void {
 function isWSL(): boolean {
   if (process.platform !== "linux") return false;
   try {
-    const { readFileSync } = require("node:fs");
     const release = readFileSync("/proc/version", "utf8").toLowerCase();
     return release.includes("microsoft") || release.includes("wsl");
   } catch {
@@ -217,7 +217,6 @@ function isWSL(): boolean {
 function isWSL2(): boolean {
   if (!isWSL()) return false;
   try {
-    const { readFileSync } = require("node:fs");
     const version = readFileSync("/proc/version", "utf8").toLowerCase();
     return version.includes("wsl2") || version.includes("microsoft-standard");
   } catch {

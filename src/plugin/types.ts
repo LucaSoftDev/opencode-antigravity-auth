@@ -90,6 +90,14 @@ export interface PluginEventPayload {
 }
 
 export interface PluginResult {
+  config?: (config: {
+    command?: Record<string, unknown>;
+    provider?: {
+      google?: {
+        models?: Record<string, unknown>;
+      };
+    };
+  }) => Promise<void>;
   auth: {
     provider: string;
     loader: (getAuth: GetAuth, provider: Provider) => Promise<LoaderResult | Record<string, unknown>>;

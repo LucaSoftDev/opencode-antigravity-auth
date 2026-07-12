@@ -1380,6 +1380,20 @@ export const createAntigravityPlugin = (providerId: string) => async (
   });
 
   return {
+    config: async (config) => {
+      const googleProvider = config.provider?.google;
+      if (googleProvider) {
+        googleProvider.models = googleProvider.models ?? {};
+      }
+
+      if (!config.command) {
+        config.command = {};
+      }
+      config.command.gquota = {
+        description: "Show Antigravity account quota usage",
+        template: "Run the Antigravity quota check and return the current account status.",
+      };
+    },
     event: eventHandler,
     tool: {
       google_search: googleSearchTool,
